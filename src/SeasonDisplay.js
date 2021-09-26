@@ -1,5 +1,16 @@
 import React from 'react'
 
+const seasonConfig = {
+    summer: {
+        text: "Let's hit the beach!",
+        iconName: 'sun'
+    },
+    winter: {
+        text: "Burrr it is cold!",
+        iconName: 'Snowflake'
+    }
+};
+
 const getSeasons = (lat, month) => {
    if(month > 2 && month < 9) {
        return lat > 0 ? 'Summer' : 'Winter';
